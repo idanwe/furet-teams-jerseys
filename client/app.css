@@ -1,0 +1,12 @@
+.jersey {
+  display: inline-block;
+}
+
+.jersey .title {
+  text-align: center;
+}
+
+.jersey-img {
+  width: 80px;
+  height: 105px;
+}

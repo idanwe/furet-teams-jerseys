@@ -1,0 +1,21 @@
+<div>
+  <ul>
+    <li *ng-for="#team of teams">
+      <h3>{{team._id}} - rank: {{team.rank}} {{team.classic ? 'CLASSIC' : undefined}}</h3>
+      <div class="jersey">
+        <div class="title">Home</div>
+        <a href="{{getHomeUrl(team)}}" target="_blank">
+          <img class="jersey-img" src="{{getHomeUrl(team)}}" alt="home">
+        </a>
+        <a href="{{getGoogleSearch(team, 'home')}}" target="_blank">search on google</a>
+      </div>
+      <div class="jersey">
+        <div class="title">Away</div>
+        <a href="{{getAwayUrl(team)}}" target="_blank">
+          <img class="jersey-img" src="{{getAwayUrl(team)}}" alt="away">
+        </a>
+      </div>
+      <a href="{{getGoogleSearch(team, 'away')}}" target="_blank">search on google</a>
+    </li>
+  </ul>
+</div>
